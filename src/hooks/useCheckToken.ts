@@ -6,6 +6,6 @@ export const useCheckToken = () => {
     const dispatch = useTypedDispatch();
     useEffect(() => {
         const possibleToken = localStorage.getItem('token');
-        possibleToken ? dispatch(loginAgain(possibleToken)) : dispatch(stopLoader);
+        possibleToken ? dispatch(loginAgain(possibleToken)) : dispatch(stopLoader());
     }, []);
 }
