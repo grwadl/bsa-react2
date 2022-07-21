@@ -1,0 +1,34 @@
+.sign-up-page,
+.sign-in-page {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.sign-up-form,
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 340px;
+  margin-bottom: 30px;
+}
+
+.sign-up-form__title,
+.sign-in-form__title {
+  margin: 0 0 20px;
+  font-size: var(--font-size-400);
+  text-align: center;
+}
+
+.sign-up-form__link,
+.sign-in-form__link {
+  color: var(--color-blue-200);
+  transition: 0.1s color ease;
+}
+
+.sign-up-form__link:hover,
+.sign-in-form__link:hover {
+  color: var(--color-blue-300);
+}

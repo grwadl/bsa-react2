@@ -1,0 +1,15 @@
+.select select {
+  min-width: 160px;
+  min-height: 45px;
+  padding: 10px 40px 10px 15px;
+  font-size: var(--font-size-300);
+  background-color: var(--color-white);
+  background-image: url('../../../assets/images/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 15px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  appearance: none;
+}

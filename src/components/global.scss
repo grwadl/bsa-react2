@@ -1,0 +1,78 @@
+/* scaffolding */
+
+:focus,
+:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--color-blue-300);
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
+::selection {
+  color: var(--color-white);
+  background-color: var(--color-blue-200);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+select {
+  color: inherit;
+  font-family: inherit;
+}
+
+.input input {
+  min-width: 160px;
+  min-height: 45px;
+  padding: 10px 15px;
+  font-size: var(--font-size-300);
+  background-color: var(--color-blue-100);
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.input input::placeholder {
+  color: var(--color-blue-400);
+  opacity: 0.4;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+a {
+  text-decoration: none;
+}
+
