@@ -18,6 +18,6 @@ export const useTripRequest = () => {
         dispatch(fetchTripById(params.tripId as string))
             .then(unwrapResult)
             .catch(e => Number(e.message) === 401 ? dispatch(errorHandlingAction(e.message)) : redirect());
-        return () => dispatch(closeOpenedBooking);
+        return () => dispatch(closeOpenedBooking());
     }, []);
 }
