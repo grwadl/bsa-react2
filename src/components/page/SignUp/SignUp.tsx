@@ -24,7 +24,7 @@ const SignUp: FC = () => {
                          onChange={e => setName(e)}/>
                 <MyInput name={'email'} type={'email'} labelText={'Email'} value={loginValue}
                          onChange={e => setEmail(e)}/>
-                <MyInput name={'password'} type={'password'} labelText={'Email'} value={password}
+                <MyInput name={'password'} type={'password'} labelText={'Password'} value={password}
                          onChange={e => setPass(e)}/>
                 <SignButton text='Sign Up' isValid={isValid}/>
             </form>
