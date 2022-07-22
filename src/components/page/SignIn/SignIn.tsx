@@ -20,7 +20,7 @@ const SignIn: FC = ({}) => {
                 <h2 className="sign-in-form__title">Sign In</h2>
                 <MyInput name={'email'} type={'email'} labelText={'Email'} value={loginValue}
                          onChange={e => setEmail(e)}/>
-                <MyInput name={'password'} type={'password'} labelText={'Email'} value={password}
+                <MyInput name={'password'} type={'password'} labelText={'Password'} value={password}
                          onChange={e => setPass(e)}/>
                 <SignButton text='Sign In' isValid={isValid}/>
             </form>
